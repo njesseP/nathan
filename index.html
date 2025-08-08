@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume - Nathan Jesse Pine</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+      <div id="resumeOnly">
+    <section>
+      <header>
+        <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic" />
+        <div>
+          <h1>NATHAN JESSE MANIEGO PINE</h1>
+          <p><q>Naturally Built to Slay.</q></p>
+        </div>
+      </header>
+    </section>
+
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I am Nathan Jesse Pine, a third-year Bachelor of Science in Information Technology student at Dominican College of Tarlac. I enjoy learning about programming, computer systems, and software development. I like working on projects that help me improve my skills. My goal is to become a reliable and skilled IT professional in the future.
+      </p>
+    </section>
+
+    <section>
+      <h2>Personal Data</h2>
+      <div class="info">
+        <div><span>Age:</span> <strong>20</strong></div>
+        <div><span>Gender:</span> <strong>Male</strong></div>
+        <div><span>Birthday:</span> <strong>May 27, 2005</strong></div>
+        <div><span>Birthplace:</span> <strong>Tarlac Provincial Hospital</strong></div>
+        <div><span>Nationality:</span> <strong>Filipino</strong></div>
+        <div><span>Civil Status:</span> <strong>Single</strong></div>
+        <div><span>Height:</span> <strong>5'8"</strong></div>
+      </div>
+    </section>
+    <section>
+      <h2>Academic Background</h2>
+      <div class="academic-list">
+        <div class="academic-entry">
+          <div class="academic-year">2022 - Present</div>
+          <div class="academic-details">
+            <strong>Bachelor of Science in Information Technology</strong><br>
+            Dominican College of Tarlac
+          </div>
+        </div>
+        <hr />
+        <div class="academic-entry">
+          <div class="academic-year">2020 - 2022</div>
+          <div class="academic-details">
+            <strong>Senior High School</strong><br>
+            Capas Senior High School
+          </div>
+        </div>
+        <hr />
+        <div class="academic-entry">
+          <div class="academic-year">2016 - 2020</div>
+          <div class="academic-details">
+            <strong>Junior High School</strong><br>
+            Capas National High School
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Designing</li>
+        <li>Teamwork</li>
+        <li>Time Management</li>
+        <li>Creativity</li>
+        <li>Listening</li>
+      </ul>
+    </section>
+    <section class="page-break-before">
+      <h2>Projects/Achievements</h2>
+      <ul class="academic-list">
+        <li><strong>SAD project</strong></li>
+        <li><strong>Case Study</strong></li>
+        <li><strong>Dean's Lister</strong></li>
+        <li><strong>With Honors in High School</strong></li> 
+      </ul>
+    </section>
+  <section>
+    <h2>Contact Details</h2>
+    <div><i class="fas fa-map-marker-alt"> </i><strong>Manga, Capas, Tarlac</strong></div>
+    <div><i class="fas fa-phone"></i> <strong>0946-944-5284</strong></div>
+    <div><i class="fas fa-envelope"> </i><strong>nathanjessepine27@email.com</strong></div>
+  </section>
+  </div>
+    <div class="center-btn">
+      <button id="download_Btn">Download Full Resume (PDF)</button>
+    </div>
+  <section>
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="email" id="contactEmail" placeholder="Your Email" required />
+      <textarea id="contactMessage" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  <section>
+    <h2>Leave a Comment</h2>
+    <div class="comment-box">
+      <input type="text" id="commentName" placeholder="Your Name" />
+      <textarea id="commentText" placeholder="Your Comment" rows="3"></textarea>
+      <button onclick="addComment()">Submit Comment</button>
+    </div>
+    <div id="commentsContainer"></div>
+  </section>
+<script src="script.js"></script>
+</body>
+</html>
